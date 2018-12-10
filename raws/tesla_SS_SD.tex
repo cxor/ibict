@@ -1,0 +1,182 @@
+
+\documentclass{article} % Default font size is 12pt, it can be changed here
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{datetime}
+\linespread{1.2} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Safety, Security and Self-driving of Tesla Motors}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Tomasz \textsc{Zbudowski} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Author:} \\
+ Federico \textsc{Boulos} 
+\end{flushright}
+\end{minipage}\\[4cm]
+
+{\large Last Update: \ddmmyyyydate\today, \currenttime}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+
+% --------------------------------------------------------
+% TO DO
+% 1) Eliminare confronti unnecessari e attacchi alla FCA
+% 2) Esaltare alle stelle TSLA senza daneggiare FCA
+% 3) Contrasto va bene al livello settore ma con fca va nella riconabdhb
+
+% DONE
+% - Fixed the bibliography
+
+% --------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+
+
+\section{Safety \& Security} % Major section
+\subsection{Safety}
+Safety of Tesla cars has always been a focal point of the company.
+Every car that Tesla has released on the market has reached at least 5 star rating \cite{Safety}. Furthermore, most of them went even beyond that and to be precise Model S \cite{ModelS-Rating} , Model X and Model 3 reached level maximum safety in all test and as a result they were awarded 5.4 stars rating. 
+By NHTSA standards all Tesla cars set a new record having the lowest probability of injury, outclassing even recent Volvo cars, which historically have been leaders of this sector. When compared with the Volvo S60, Tesla Model S preserved 63.5 percent of driver residual space vs. 7.8 percent for the Volvo using an innovative solution similar to what adopted in the Apollo Lunar Lander.
+Such a feat is as impressive as unusual since many competitors release cars that not only score poorly at NHTSA standard test but also suffer from  numerous factory recalls. 
+\newline 
+By nature EV are safer and more reliable since they have fewer mechanical parts compared to a traditional ICE car. This implies that there are no points of failure, other than the battery.
+Consequently their maintenance is also easier, more straightforward and cheaper.
+\newline One may argue that battery packs are dangerous and might catch fire when damaged of overheated. Regarding this, Tesla not only implements the latest state of the art cooling and protection. Therefore battery packs can be considered safest on the market. Nonetheless the company decided to teach firefighters how to deal with a burning teslas \cite{Tesla Training Fire}.
+\newline Tesla's concern for customers safety is so deep that they even try to protect them from themselves since the most flawed part of a car is the driver.
+\newline Tesla's can recognize if the driver is distracted, is falling asleep and act accordingly.In addition the Autopilot system,  not only assists the driver but also can identify and react to different kinds of danger.
+\newline As a result Tesla is leading both in the physical Safety and danger prevention departments.
+
+
+% ----------------------------
+\subsection{Security}
+This topic was not discussed much during the battle, but it is important to highlight that Tesla cars not only are safe but also secure.
+\newline One of the most common misconceptions is that by being more "digital" than conventional cars, teslas are also more vulnerable.
+Articles such as \cite{Security:Theft} do not do justice, as the method described is nearly universal and was used for decades to steal credit cards. To prevent this sort event from happening again, another verification step was introduced.
+\newline In addition, as seen in \cite{Security:Methods} the company has devised guidelines of conduct and rewards anyone that finds a vulnerability.
+% ------------------------------------------------------------
+\section{Self-Driving} % Sub-section
+To speak about self-driving cars, a quick introduction of different levels of automation is necessary.
+\begin{itemize}
+    \item Level 0: basic warnings and safety features.
+    \item Level 1: shared control of the vehicle
+    \item Level 2: full control, driver needs to be ready to react at any time
+    \item Level 3: full control,  driver needs to be ready to react in some situations
+    \item Level 4: full control,  driver not needed
+    \item Level 5: no steering wheel needed, robotic taxi
+\end{itemize}
+Since the humble beginnings Tesla aimed at innovating everything related to cars.
+It was no surprise when in September of 2014 The Autopilot, an advanced assisted driving program was released. At that time the public opinion on self-driving was not positive but the interest was very high \cite{Pilot:Opinion}. It was a risky bet but it paid off as nowadays Autopilot, now at 9-th version, is the most trusted self-driving system around \cite{Pilot:Trust}.
+Such positive public opinion was achieved by constantly and gradually innovating the system and acting accordingly to the feedback received from the customers.
+On the other hand, Waymo which is aiming directly at level 5 automation and is considered one of the sector leaders scored very poorly.
+
+As stated in \cite{Pilot:Awareness} in 2018 the consumers are more excited towards the self-driving cars \cite{Feedback Users Autopilot} but also more distrustful. In addition \cite{Pilot:Awareness} shows that people want more control, and would be really reluctant to own/enter a level 4 autonomous car. This higlights the demand for level 2 systems, that Tesla pioneered.
+Make no mistake, Teslas oboard hardware and software can achieve a level 4 performance \cite{Full Self-Driving} but, the autopilot is currently classified as a Level 2 as the technology is stil not perfect and moreover not wanted \cite{Pilot:Awareness} \cite{Pilot:CheatSheet}.
+Its important to mention that the company gradually releases more and more free of charge advanced features through over-the-air software updates as they become safe and reliable.
+In this way  the company-customer trust was built over the years.
+%Unless public opinion changes, FCA and Waymo autonomous taxi venture will be a flop.
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+\bibitem[1]{Safety}
+Crash Ratings.
+\newblock https://www.nhtsa.gov/
+\newblock https://www.euroncap.com/it/results/fiat/punto/29849
+
+\bibitem[2]{ModelS-Rating}
+\newblock https://www.tesla.com/it\_IT/blog/tesla-model-s-achieves-best-safety-rating-any-car-ever-tested
+
+\bibitem[3]{Tesla Training Fire}
+\newblock https://www.tesla.com/firstresponders
+
+\bibitem[4]{Security:Theft}A Tesla Model 3 Has Been Stolen Using Just a Smartphone
+\newblock https://interestingengineering.com/a-tesla-model-3-has-been-stolen-using-just-a-smartphone
+
+\bibitem[5]{Security:Methods} Product Security
+\newblock https://www.tesla.com/about/security
+
+\bibitem[6]{Pilot:Opinion}
+Schoettle, B. and Sivak, M. 2014. Public opinion about self-driving vehicles in China, India, Japan, the U.S., the U.K., and Australia. 
+\newblock http://deepblue.lib.umich.edu/bitstream/handle/2027.42/109433/103139.pdf?sequence=1
+
+\bibitem[7]{Pilot:Trust}
+Study: Consumers trust Tesla the most for self-driving car
+\newblock https://www.autolist.com/news-and-analysis/consumers-trust-tesla-most-for-self-driving-autonomous-cars
+
+\bibitem[8]{Full Self-Driving} 
+\newblock https://www.tesla.com/it\_IT/blog/all-tesla-cars-being-produced-now-have-full-self-driving-hardware
+
+\bibitem[9]{Pilot:CheatSheet}
+Tesla's Autopilot: Cheat sheet.
+\newblock https://www.techrepublic.com/article/teslas-autopilot-cheat-sheet/
+
+\bibitem[10]{Pilot:Awareness}
+Autonomous Vehicle Awareness Rising, Acceptance Declining, According to Cox Automotive Mobility Study.
+\newblock https://www.coxautoinc.com/news/evolution-of-mobility-study-autonomous-vehicles/
+
+\bibitem[11]{Feedback Users Autopilot}
+https://twitter.com/Katea023/status/1065792998783549440
+
+%  ------- not cited --------------
+\bibitem[12]{Richiami MIT}
+\newblock http://www.mit.gov.it/mit/site.php?p=albric
+
+\bibitem[13]{5G-Autonomous-Car}https://www.forbes.com/sites/bijankhosravi/2018/03/25/autonomous-cars-wont-work-until-we-have-5g/#59f36ea4437e
+
+\bibitem[14]{Fiat-Punto-EuroNCAP}https://www.euroncap.com/it/results/fiat/punto/29849
+
+\bibitem[15]{EV Fire-Risk}
+https://money.cnn.com/2018/05/17/news/companies/electric-car-fire-risk/index.html
+% ---------------------------------
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
