@@ -1,4 +1,4 @@
-#IBICT 2018/2019 - FCA vs Tesla Automotors
+# IBICT 2018/2019 - Fiat Chrysler Automobiles vs Tesla Automotors
 
 - Feel free to create files in raws/ directory
 - Please consider master branch as the stable version:
